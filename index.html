@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pothuganti Vijay Rama Rao - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
         /* Reset default margin and padding */
         * {
@@ -89,10 +89,11 @@
             padding: 2rem;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             margin-bottom: 2rem;
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .project-item:hover {
             transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
         .project-item h3 {
             font-size: 1.8rem;
@@ -114,6 +115,22 @@
         }
         #skills li {
             margin: 0.5rem 0;
+        }
+
+        /* Social Icons Styling */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .social-icons a {
+            color: #ecf0f1;
+            font-size: 2rem;
+            margin: 0 1rem;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #00b894;
         }
 
         /* Education and Experience sections */
@@ -211,7 +228,7 @@
     </section>
 
     <section id="about">
-        <h2>About Me</h2>
+        <h2><i class="fas fa-user"></i>About Me</h2>
         <p>I am a graduate student at Northeastern University, Boston, with a strong background in data science, software engineering, and DevSecOps. I enjoy leading projects, mentoring peers, and building innovative solutions.</p>
     </section>
 
@@ -294,14 +311,14 @@
         <h2>Contact</h2>
         <p>If you'd like to collaborate on projects or discuss opportunities, feel free to reach out.</p>
         <button onclick="window.location.href='mailto:vijaypothuganti1@gmail.com';">Contact Me</button>
-        <div class="social-icons">
-            <a href="https://github.com/pothugantivijay" target="_blank">
-                <i class="fab fa-github" style="font-size: 2rem; color: #ecf0f1;"></i>
-            </a>
-        </div>
     </section>
 
     <footer>
+        <div class="social-icons">
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/pothugantivijay" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:vijaypothuganti1@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
         <p>&copy; 2025 Pothuganti Vijay Rama Rao</p>
     </footer>
 

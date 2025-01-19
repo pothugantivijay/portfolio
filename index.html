@@ -6,155 +6,129 @@
     <title>Pothuganti Vijay Rama Rao - Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
-        /* Reset default margin and padding */
+        /* Reset and global styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
-        /* Global font settings */
         body {
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
-            background: linear-gradient(to right, #1D4350, #A43931);  /* Subtle gradient background */
-            color: #ecf0f1; /* Light text color for readability */
+            background: #f5f5f5;
+            color: #333;
         }
 
-        /* Header styling */
+        /* Header styles */
         header {
-            background-color: #1d1f2f;
+            background-color: #24292e;
             color: white;
-            padding: 1.5rem 3rem;
+            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         header h1 {
-            font-size: 2rem;
+            font-size: 1.8rem;
+        }
+        nav {
+            display: flex;
+            gap: 1.5rem;
         }
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 1.5rem;
-            font-weight: 600;
-            font-size: 1.1rem;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.3s;
         }
         nav a:hover {
-            text-decoration: underline;
             color: #00b894;
         }
 
-        /* Main content area styling */
-        section {
-            padding: 4rem 2rem;
-            max-width: 1200px;
-            margin: auto;
-        }
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #ecf0f1; /* Light text color for headings */
-        }
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            line-height: 1.6;
-        }
-
-        /* Intro section */
+        /* Hero Section */
         .intro {
-            text-align: center;
-            padding: 4rem 2rem;
-            background: linear-gradient(to right, #2c3e50, #34495e);/* Gradient from a dark teal to a rich red */
+            background: linear-gradient(120deg, #1D4350, #A43931);
             color: white;
-            border-radius: 10px;
-            margin-bottom: 3rem;
-            position: relative;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 5rem 2rem;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
         }
         .intro h2 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             margin-bottom: 1rem;
         }
         .intro p {
             font-size: 1.2rem;
         }
 
-        /* Projects section */
+        /* Section Styles */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        /* Projects */
         .project-item {
-            background-color: #fff;
+            background: white;
             border-radius: 8px;
             padding: 2rem;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             margin-bottom: 2rem;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
         }
         .project-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
         }
         .project-item h3 {
-            font-size: 1.8rem;
-            color: #1d1f2f;
+            font-size: 1.5rem;
             margin-bottom: 1rem;
+            color: #1D4350;
         }
         .project-item ul {
-            font-size: 1.1rem;
-            color: #555;
+            list-style: disc;
+            padding-left: 1.5rem;
         }
-        .project-item li {
+        .project-item ul li {
             margin-bottom: 0.8rem;
+            font-size: 1rem;
         }
 
-        /* Skills section */
+        /* Skills */
         #skills ul {
-            list-style-type: none;
-            font-size: 1.1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            list-style: none;
+            padding: 0;
         }
         #skills li {
-            margin: 0.5rem 0;
-        }
-
-        /* Social Icons Styling */
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            margin-top: 1rem;
-        }
-        .social-icons a {
-            color: #ecf0f1;
-            font-size: 2rem;
-            margin: 0 1rem;
-            transition: color 0.3s ease;
-        }
-        .social-icons a:hover {
-            color: #00b894;
-        }
-
-        /* Education and Experience sections */
-        div h3 {
-            font-size: 1.6rem;
-            margin-bottom: 0.8rem;
-            color: #ecf0f1;
-        }
-        div p {
-            font-size: 1.1rem;
-            color: #bdc3c7;
-        }
-
-        /* Footer section */
-        footer {
-            background-color: #2d3436;
+            background: #1D4350;
             color: white;
-            text-align: center;
-            padding: 1rem;
-            font-size: 1rem;
-            margin-top: 4rem;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
         }
 
-        /* Button styling */
+        /* Contact */
+        #contact {
+            text-align: center;
+        }
         button {
             background-color: #4CAF50;
             color: white;
@@ -169,52 +143,59 @@
             background-color: #45a049;
         }
 
-        /* Responsive design */
+        /* Footer */
+        footer {
+            background: #24292e;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #00b894;
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
             nav {
-                margin-top: 1rem;
-            }
-            nav a {
-                margin: 0.5rem 0;
-            }
-            .intro {
-                padding: 2rem 1rem;
+                flex-wrap: wrap;
             }
             .intro h2 {
-                font-size: 2.2rem;
-            }
-            .intro p {
-                font-size: 1rem;
+                font-size: 2rem;
             }
         }
 
         @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.5rem;
-            }
-            nav a {
-                font-size: 1rem;
-                margin: 0.5rem;
+            header {
+                flex-direction: column;
+                align-items: flex-start;
             }
             .project-item {
                 padding: 1.5rem;
             }
             .project-item h3 {
-                font-size: 1.6rem;
+                font-size: 1.2rem;
             }
         }
     </style>
 </head>
 <body>
-
     <header>
         <h1>Pothuganti Vijay Rama Rao</h1>
         <nav>
-            <a href="#about">About Me</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
             <a href="#experience">Experience</a>
@@ -228,8 +209,8 @@
     </section>
 
     <section id="about">
-        <h2><i class="fas fa-user"></i> About Me</h2>
-        <p>I am a graduate student at Northeastern University, Boston, with a strong background in data science, software engineering, and DevSecOps. I enjoy leading projects, mentoring peers, and building innovative solutions.</p>
+        <h2>About Me</h2>
+        <p>I am a graduate student at Northeastern University, Boston, specializing in data science and software engineering. My work focuses on crafting innovative solutions to real-world challenges.</p>
     </section>
 
     <section id="education">
@@ -245,56 +226,6 @@
         </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-item">
-            <h3>Boston Housing Price Prediction Project </h3>
-            <ul>
-                <li>Developed machine learning models (Linear Regression, Random Forest) to predict housing prices using the Boston Housing dataset.</li>
-                <li>Conducted exploratory data analysis (EDA) with Seaborn/Matplotlib and applied data preprocessing techniques (scaling, feature engineering, missing data handling).</li>
-                <li>Optimized model performance through hyperparameter tuning (GridSearchCV) and evaluated using R-squared and Mean Squared Error metrics.</li>
-                <li>Utilized Python, Pandas, NumPy, and Scikit-learn for data manipulation and model building.</li>
-            </ul>
-        </div>
-        <div class="project-item">
-            <h3>MEDICARE: Medical Group Management Platform</h3>
-            <ul>
-                <li>Developed a Java Swing-based platform to connect hospitals, pharmacies, government agencies, and volunteers, streamlining healthcare delivery with role-based access.</li>
-                <li>Enabled patient registration, emergency response mechanisms, and pharmacy inventory management.</li>
-                <li>Designed rapid response systems for critical care involving ambulance services and emergency doctors while integrating volunteers for non-medical support.</li>
-            </ul>
-        </div>
-        <div class="project-item">
-            <h3>SecureOps</h3>
-            <ul>
-                <li>Engineered a secure and robust user operations web application using Java Spring Boot, emphasizing advanced login security features.</li>
-                <li>Optimized deployment and operational processes through custom Linux scripting, MariaDB integration, and Terraform automation.</li>
-                <li>Established a CI/CD pipeline, integrating version control for automated testing workflows, ensuring high code quality and reliability.</li>
-                <li>Developed a Python-based automated email verification system, enhancing user account security.</li>
-            </ul>
-        </div>
-        <div class="project-item">
-            <h3>HealthCare Connect</h3>
-            <ul>
-                <li>Developed a full-stack web application using React and Node.js to facilitate doctor-patient communication and appointment management.</li>
-                <li>Implemented a streamlined appointment scheduling system with integrated notifications, connecting doctors with patients in real-time.</li>
-                <li>Used Firebase for authentication, data storage, and real-time database management, ensuring quick and secure app usage.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Languages:</strong> Python, Java, SQL, JavaScript, C, HTML, CSS, React, Linux, TypeScript</li>
-            <li><strong>Tools & Technologies:</strong> AWS, Docker, GitHub, Terraform, Spring Boot, PostgreSQL, MongoDB</li>
-            <li><strong>Frameworks:</strong> React, Node.js, Flask, Spring Boot</li>
-            <li><strong>Methodologies:</strong> DevSecOps, Agile, Continuous Integration/Continuous Deployment</li>
-            <li>Database: MySQL, MongoDB, MariaDB</li>
-            <li>Certifications: R programming, SQL for Data Science, AWS Fundamentals</li>
-        </ul>
-    </section>
-
     <section id="experience">
         <h2>Experience</h2>
         <div>
@@ -307,20 +238,65 @@
         </div>
     </section>
 
+    <section id="projects">
+        <h2>Projects</h2>
+        div class="project-item">
+            <h3>Boston Housing Price Prediction Project </h3>
+            <ul>
+                <li>Developed machine learning models (Linear Regression, Random Forest) to predict housing prices using the Boston Housing dataset.</li>
+                <li>Conducted exploratory data analysis (EDA) with Seaborn/Matplotlib and applied data preprocessing techniques (scaling, feature engineering, missing data handling).</li>
+                <li>Optimized model performance through hyperparameter tuning (GridSearchCV) and evaluated using R-squared and Mean Squared Error metrics.</li>
+                <li>Utilized Python, Pandas, NumPy, and Scikit-learn for data manipulation and model building.</li>
+            </ul>
+        </div>
+        <div class="project-item">
+            <h3>SecureOps</h3>
+            <ul>
+                <li>Engineered a secure and robust user operations web application using Java Spring Boot, emphasizing advanced login security features.</li>
+                <li>Optimized deployment and operational processes through custom Linux scripting, MariaDB integration, and Terraform automation.</li>
+                <li>Established a CI/CD pipeline, integrating version control for automated testing workflows, ensuring high code quality and reliability.</li>
+                <li>Developed a Python-based automated email verification system, enhancing user account security.</li>
+            </ul>
+        </div>
+        <div class="project-item">
+            <h3>MEDICARE: Medical Group Management Platform</h3>
+            <ul>
+                <li>Developed a Java Swing-based platform to connect hospitals, pharmacies, government agencies, and volunteers, streamlining healthcare delivery with role-based access.</li>
+                <li>Enabled patient registration, emergency response mechanisms, and pharmacy inventory management.</li>
+                <li>Designed rapid response systems for critical care involving ambulance services and emergency doctors while integrating volunteers for non-medical support.</li>
+            </ul>
+        </div>
+        <div class="project-item">
+            <h3>DocBook</h3>
+            <ul>
+                <li>Developed a full-stack web application using React and Node.js to facilitate doctor-patient communication and appointment management.</li>
+                <li>Implemented a streamlined appointment scheduling system with integrated notifications, connecting doctors with patients in real-time.</li>
+                <li>Used Firebase for authentication, data storage, and real-time database management, ensuring quick and secure app usage.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>React</li>
+            <li>SQL</li>
+        </ul>
+    </section>
+
     <section id="contact">
         <h2>Contact</h2>
-        <p>If you'd like to collaborate on projects or discuss opportunities, feel free to reach out.</p>
-        <button onclick="window.location.href='mailto:vijaypothuganti1@gmail.com';">Contact Me</button>
+        <button onclick="window.location.href='mailto:vijaypothuganti1@gmail.com';">Email Me</button>
     </section>
 
     <footer>
         <div class="social-icons">
-        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/pothugantivijay" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:vijaypothuganti1@gmail.com"><i class="fas fa-envelope"></i></a>
-    </div>
+            <a href="www.linkedin.com/in/vijayramaraopothuganti"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/pothugantivijay"><i class="fab fa-github"></i></a>
+        </div>
         <p>&copy; 2025 Pothuganti Vijay Rama Rao</p>
     </footer>
-
 </body>
 </html>

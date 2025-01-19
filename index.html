@@ -5,214 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pothuganti Vijay Rama Rao - Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <style>
-        /* Reset and global styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            background: #f5f5f5;
-            color: #333;
-        }
-
-        /* Header styles */
-        header {
-            background-color: #24292e;
-            color: white;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        header h1 {
-            font-size: 1.8rem;
-        }
-        nav {
-            display: flex;
-            gap: 1.5rem;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 1rem;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #00b894;
-        }
-
-        /* Hero Section */
-        .intro {
-            background:linear-gradient(to right, #b1e2c1, #b8d5e1);
-            color: white;
-            text-align: center;
-            border-radius: 8px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .intro h2 {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
-        }
-        .intro p {
-            font-size: 1.2rem;
-        }
-
-        /* Section Styles */
-        section {
-            padding: 4rem 2rem;
-            max-width: 1200px;
-            margin: auto;
-        }
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #333;
-        }
-        p {
-            font-size: 1rem;
-            line-height: 1.8;
-            margin-bottom: 2rem;
-        }
-
-        /* Projects */
-        .project-item {
-            background: white;
-            border-radius: 8px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .project-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-        }
-        .project-item h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #1D4350;
-        }
-        .project-item ul {
-            list-style: disc;
-            padding-left: 1.5rem;
-        }
-        .project-item ul li {
-            margin-bottom: 0.8rem;
-            font-size: 1rem;
-        }
-
-        /* Skills */
-        
-        
-        #skills ul {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            list-style: none;
-            padding: 0;
-        }
-        #skills li {
-            background: #1D4350;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-        }
-        #skills li:hover {
-            background: #00b894;
-            color: #fff;
-            cursor: pointer;
-            transform: scale(1.05);
-            transition: 0.3s;
-        }
-
-        /* Contact */
-        #contact {
-            text-align: center;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 0.8rem 2rem;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        button:hover {
-            background-color: #45a049;
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-            transform: translateY(-2px);
-        }
-
-        /* Footer */
-        footer {
-            background: #24292e;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 3rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-        }
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-bottom: 1rem;
-        }
-        .social-icons a {
-            color: white;
-            font-size: 1.5rem;
-            transition: color 0.3s;
-        }
-        .social-icons a:hover {
-            color: #00b894;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            nav {
-                flex-wrap: wrap;
-            }
-            .intro h2 {
-                font-size: 2rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .project-item {
-                padding: 1.5rem;
-            }
-            .project-item h3 {
-                font-size: 1.2rem;
-            }
-        }
-        
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
     <header>
         <h1>Pothuganti Vijay Rama Rao</h1>
         <nav>
@@ -229,7 +24,7 @@
         <h2>Welcome to My Portfolio!</h2>
         <p>Aspiring Data Scientist | Full Stack Developer | DevSecOps Enthusiast</p>
     </section>
-  <body>
+
     <section id="about">
         <h2>About Me</h2>
         <p>I am a graduate student at Northeastern University, Boston, specializing in data science and software engineering. My work focuses on crafting innovative solutions to real-world challenges.</p>
@@ -250,16 +45,56 @@
 
     <section id="experience">
         <h2>Experience</h2>
-        <div>
+        <div class="project-item">
             <h3>Software Engineer Intern | Wipro</h3>
             <p><strong>July 2022 – December 2022</strong></p>
-            <p>Contributed to 3 real-time projects, utilizing Java Spring Boot for backend development and React for frontend, resulting in a 20% improvement in application performance.</p>
-            <p>Implemented DevOps practices using Git and GitHub for version control, reducing deployment time by 30% through automated CI/CD pipelines.</p>
-            <p>Collaborated with a team of 8 to design and implement RESTful APIs using Node.js and Express, facilitating seamless integration between frontend and backend services.</p>
-            <p>Developed and optimized SQL queries for MySQL and MongoDB databases, improving data retrieval speed by 25% across 2 major projects.</p>
+            <ul>
+                <li>Contributed to 3 real-time projects, utilizing Java Spring Boot for backend development and React for frontend, resulting in a 20% improvement in application performance.</li>
+                <li>Implemented DevOps practices using Git and GitHub for version control, reducing deployment time by 30% through automated CI/CD pipelines.</li>
+                <li>Collaborated with a team of 8 to design and implement RESTful APIs using Node.js and Express, facilitating seamless integration between frontend and backend services.</li>
+                <li>Developed and optimized SQL queries for MySQL and MongoDB databases, improving data retrieval speed by 25% across 2 major projects.</li>
+            </ul>
         </div>
     </section>
-    
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>Boston Housing Price Prediction Project</h3>
+            <ul>
+                <li>Developed machine learning models (Linear Regression, Random Forest) to predict housing prices using the Boston Housing dataset.</li>
+                <li>Conducted exploratory data analysis (EDA) with Seaborn/Matplotlib and applied data preprocessing techniques.</li>
+                <li>Optimized model performance through hyperparameter tuning (GridSearchCV) and evaluated using R-squared and Mean Squared Error metrics.</li>
+                <li>Utilized Python, Pandas, NumPy, and Scikit-learn for data manipulation and model building.</li>
+            </ul>
+        </div>
+        <div class="project-item">
+            <h3>SecureOps</h3>
+            <ul>
+                <li>Engineered a secure and robust user operations web application using Java Spring Boot.</li>
+                <li>Optimized deployment and operational processes through custom Linux scripting and MariaDB integration.</li>
+                <li>Established a CI/CD pipeline, integrating version control for automated testing workflows.</li>
+                <li>Developed a Python-based automated email verification system.</li>
+            </ul>
+        </div>
+        <div class="project-item">
+            <h3>MEDICARE: Medical Group Management Platform</h3>
+            <ul>
+                <li>Developed a Java Swing-based platform to connect hospitals, pharmacies, and volunteers.</li>
+                <li>Enabled patient registration and emergency response mechanisms.</li>
+                <li>Designed rapid response systems for critical care involving ambulance services.</li>
+            </ul>
+        </div>
+        <div class="project-item">
+            <h3>DocBook</h3>
+            <ul>
+                <li>Developed a full-stack web application using React and Node.js.</li>
+                <li>Implemented a streamlined appointment scheduling system with notifications.</li>
+                <li>Used Firebase for authentication and real-time database management.</li>
+            </ul>
+        </div>
+    </section>
+
     <section id="skills">
         <h2>Skills</h2>
         <ul>
@@ -269,85 +104,35 @@
             <li><i class="fas fa-database"></i> SQL</li>
             <li><i class="fab fa-html5"></i> HTML</li>
             <li><i class="fab fa-css3-alt"></i> CSS</li>
-            <li><i class="fab fa-js"></i> TypeScript</li> 
-            <li><i class="fas fa-desktop"></i> Swing</li> 
-            <li><i class="fab fa-react"></i> Redux</li> 
+            <li><i class="fab fa-js"></i> TypeScript</li>
+            <li><i class="fas fa-desktop"></i> Swing</li>
+            <li><i class="fab fa-react"></i> Redux</li>
             <li><i class="fab fa-github"></i> GitHub</li>
-            <li><i class="fab fa-google"></i> GCP</li> 
-            <li><i class="fas fa-cogs"></i> Terraform</li> 
+            <li><i class="fab fa-google"></i> GCP</li>
+            <li><i class="fas fa-cogs"></i> Terraform</li>
             <li><i class="fas fa-tools"></i> CI/CD</li>
             <li><i class="fab fa-linux"></i> Linux</li>
             <li><i class="fas fa-calculator"></i> NumPy</li>
-            <li><i class="fas fa-table"></i> Pandas</li> 
+            <li><i class="fas fa-table"></i> Pandas</li>
             <li><i class="fas fa-chart-bar"></i> Matplotlib</li>
         </ul>
     </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-item">
-            <h3>Boston Housing Price Prediction Project </h3>
-            <ul>
-                <li>Developed machine learning models (Linear Regression, Random Forest) to predict housing prices using the Boston Housing dataset.</li>
-                <li>Conducted exploratory data analysis (EDA) with Seaborn/Matplotlib and applied data preprocessing techniques (scaling, feature engineering, missing data handling).</li>
-                <li>Optimized model performance through hyperparameter tuning (GridSearchCV) and evaluated using R-squared and Mean Squared Error metrics.</li>
-                <li>Utilized Python, Pandas, NumPy, and Scikit-learn for data manipulation and model building.</li>
-            </ul>
-        </div>
-        <div class="project-item">
-            <h3>SecureOps</h3>
-            <ul>
-                <li>Engineered a secure and robust user operations web application using Java Spring Boot, emphasizing advanced login security features.</li>
-                <li>Optimized deployment and operational processes through custom Linux scripting, MariaDB integration, and Terraform automation.</li>
-                <li>Established a CI/CD pipeline, integrating version control for automated testing workflows, ensuring high code quality and reliability.</li>
-                <li>Developed a Python-based automated email verification system, enhancing user account security.</li>
-            </ul>
-        </div>
-        <div class="project-item">
-            <h3>MEDICARE: Medical Group Management Platform</h3>
-            <ul>
-                <li>Developed a Java Swing-based platform to connect hospitals, pharmacies, government agencies, and volunteers, streamlining healthcare delivery with role-based access.</li>
-                <li>Enabled patient registration, emergency response mechanisms, and pharmacy inventory management.</li>
-                <li>Designed rapid response systems for critical care involving ambulance services and emergency doctors while integrating volunteers for non-medical support.</li>
-            </ul>
-        </div>
-        <div class="project-item">
-            <h3>DocBook</h3>
-            <ul>
-                <li>Developed a full-stack web application using React and Node.js to facilitate doctor-patient communication and appointment management.</li>
-                <li>Implemented a streamlined appointment scheduling system with integrated notifications, connecting doctors with patients in real-time.</li>
-                <li>Used Firebase for authentication, data storage, and real-time database management, ensuring quick and secure app usage.</li>
-            </ul>
-        </div>
-    </section>
-  </body>
-
-    
 
     <section id="contact">
         <h2>Contact</h2>
         <button onclick="window.location.href='mailto:vijaypothuganti1@gmail.com';">Email Me</button>
     </section>
-    <button id="back-to-top" style="display: none;">↑ Back to Top</button>
-        <script>
-            const backToTop = document.getElementById('back-to-top');
-            window.onscroll = function() {
-                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                    backToTop.style.display = "block";
-                } else {
-                    backToTop.style.display = "none";
-                }
-              };
-            backToTop.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
-        </script>
 
+    <button id="back-to-top" title="Back to Top">↑</button>
 
     <footer>
         <div class="social-icons">
-            <a href="www.linkedin.com/in/vijayramaraopothuganti"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/pothugantivijay"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vijayramaraopothuganti" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/pothugantivijay" target="_blank"><i class="fab fa-github"></i></a>
         </div>
         <p>&copy; 2025 Pothuganti Vijay Rama Rao</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

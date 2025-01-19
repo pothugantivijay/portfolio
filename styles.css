@@ -73,6 +73,10 @@ nav a:hover {
     font-size: 2.8rem;
     margin-bottom: 1rem;
     color: #24292e;
+    padding-bottom: 0;
+}
+.intro h2::after {
+    display: none;
 }
 .intro p {
     font-size: 1.2rem;
@@ -192,6 +196,9 @@ section h2::after {
 /* Contact Section */
 #contact {
     text-align: center;
+}
+#contact h2::after{
+    display:none;
 }
 button {
     background: linear-gradient(45deg, #00b894, #00cec9);

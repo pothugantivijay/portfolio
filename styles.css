@@ -304,3 +304,24 @@ header h1 {
     transform: translateY(-3px);
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
+/* Dark mode styles */
+body.dark-mode {
+    background: #121212;
+    color: #e0e0e0;
+}
+body.dark-mode header {
+    background-color: #1e1e1e;
+}
+body.dark-mode .intro {
+    background: linear-gradient(135deg, #333333, #444444);
+}
+body.dark-mode .project-card, body.dark-mode #education div {
+    background: #1e1e1e;
+    border-color: #00cec9;
+}
+body.dark-mode .nav-link, body.dark-mode .dark-mode-toggle {
+    color: #e0e0e0;
+}
+body.dark-mode .nav-link:hover, body.dark-mode .nav-open .nav-link {
+    background: rgba(255, 255, 255, 0.1);
+}

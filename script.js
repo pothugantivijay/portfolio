@@ -16,3 +16,13 @@ const backToTopButton = document.getElementById('back-to-top');
                 behavior: 'smooth'
             });
         });
+// Dark mode toggle
+const darkModeToggle = document.querySelector('.dark-mode-toggle');
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        darkModeToggle.textContent = 'Light Mode';
+    } else {
+        darkModeToggle.textContent = 'Dark Mode';
+    }
+});

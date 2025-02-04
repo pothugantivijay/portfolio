@@ -270,6 +270,23 @@ section {
 }
 }
 
+@media (max-width: 768px) {
+  main {
+    margin-top: 80px; /* Creates space below fixed header */
+  }
+  
+  /* Optional: Make header height smaller on mobile */
+  header {
+    padding: 1rem;
+    height: 60px; /* Adjust as needed */
+  }
+  
+  /* If you have a logo in header */
+  header img {
+    max-height: 40px; /* Make logo smaller on mobile */
+  }
+}
+
 @media (max-width: 480px) {
 header {
     flex-direction: column;
